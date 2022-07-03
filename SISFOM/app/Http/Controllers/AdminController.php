@@ -22,8 +22,7 @@ class AdminController extends Controller
 
     public function jadwal_praktek()
     {
-        $jadwal = DB::table('dokter')->join('jadwal', 'jadwal.id_dokter', '=', 
-        'dokter.id')->select('jadwal.*', 'dokter.nama')->paginate(10);
+        $jadwal = DB::table('dokter')->join('jadwal', 'jadwal.id_dokter', '=', 'dokter.id')->select('jadwal.*', 'dokter.nama')->paginate(10);
         return view('admin.jadwal_praktek', ['jadwal' => $jadwal]);
     }
 
@@ -41,8 +40,7 @@ class AdminController extends Controller
 
     public function data_rawat()
     {
-        $rawatinap = DB::table('data_rawat')->join('pasien', 'data_rawat.id_pasien', '=', 
-        'pasien.id')->select('data_rawat.*', 'pasien.nama')->paginate(10);
+        $rawatinap = DB::table('data_rawat')->join('pasien', 'data_rawat.id_pasien', '=', 'pasien.id')->select('data_rawat.*', 'pasien.nama')->paginate(10);
         return view('admin.data_rawat', ['datarawat' => $rawatinap]);
     }
 
@@ -54,8 +52,7 @@ class AdminController extends Controller
 
     public function data_tindakan()
     {
-        $tindakan = DB::table('tindakan')->join('pasien', 'tindakan.id_pasien', '=',
-        'pasien.id')->select('tindakan.*', 'pasien.nama')->paginate(10);
+        $tindakan = DB::table('tindakan')->join('pasien', 'tindakan.id_pasien', '=', 'pasien.id')->select('tindakan.*', 'pasien.nama')->paginate(10);
         return view('admin.data_tindakan', ['tindakan' => $tindakan]);
     }
 }
