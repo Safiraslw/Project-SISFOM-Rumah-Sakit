@@ -77,7 +77,7 @@
                             <button type="submit" class="btn btn-dark - block">Register</button>
                         </div>
                     </form>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2021–2022</p>
                     <a href="/login" class="nav-link link-dark"><i><u>Sudah punya akun? login sekarang<u><i></a>
                 </div>
             </div>

@@ -86,7 +86,7 @@
                         </label>
                     </div>
                     </form>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2021–2022</p>
                     <a href="/register" class="nav-link link-dark"><i><u>Belum punya akun? daftar sekarang<u><i></a>
                 </div>
             </div>
