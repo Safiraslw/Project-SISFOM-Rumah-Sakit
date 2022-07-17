@@ -13,11 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('jadwal', function (Blueprint $table) {
+        Schema::create('data_rawat', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_dokter');
-            $table->string('jam');
-            $table->string('hari');
+            $table->integer('id_pasien');
+            $table->string('tipe');
+            $table->string('tanggal_masuk');
+            $table->string('tanggal_keluar');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::drop('jadwal');
+        Schema::drop('data_rawat');
     }
 };
